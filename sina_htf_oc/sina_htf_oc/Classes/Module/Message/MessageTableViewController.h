@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MessageTableViewController.h
 //  sina_htf_oc
 //
 //  Created by 赫腾飞 on 15/12/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MessageTableViewController : UITableViewController
 
 @end
-

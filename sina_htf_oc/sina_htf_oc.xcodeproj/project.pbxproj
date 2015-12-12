@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		7CE211A71C1BD536004212F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211A61C1BD536004212F1 /* main.m */; };
 		7CE211AA1C1BD536004212F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211A91C1BD536004212F1 /* AppDelegate.m */; };
-		7CE211AD1C1BD536004212F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211AC1C1BD536004212F1 /* ViewController.m */; };
-		7CE211B01C1BD536004212F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE211AE1C1BD536004212F1 /* Main.storyboard */; };
 		7CE211B21C1BD536004212F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE211B11C1BD536004212F1 /* Assets.xcassets */; };
-		7CE211B51C1BD536004212F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE211B31C1BD536004212F1 /* LaunchScreen.storyboard */; };
 		7CE211C01C1BD536004212F1 /* sina_htf_ocTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211BF1C1BD536004212F1 /* sina_htf_ocTests.m */; };
 		7CE211CB1C1BD536004212F1 /* sina_htf_ocUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211CA1C1BD536004212F1 /* sina_htf_ocUITests.m */; };
+		7CE212041C1BF638004212F1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE212031C1BF638004212F1 /* MainViewController.m */; };
+		7CE212071C1BF648004212F1 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE212061C1BF648004212F1 /* HomeTableViewController.m */; };
+		7CE2120A1C1BF657004212F1 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE212091C1BF657004212F1 /* MessageTableViewController.m */; };
+		7CE2120D1C1BF662004212F1 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2120C1C1BF662004212F1 /* DiscoverTableViewController.m */; };
+		7CE212101C1BF66D004212F1 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2120F1C1BF66D004212F1 /* ProfileTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +41,7 @@
 		7CE211A61C1BD536004212F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CE211A81C1BD536004212F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CE211A91C1BD536004212F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7CE211AB1C1BD536004212F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7CE211AC1C1BD536004212F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7CE211AF1C1BD536004212F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CE211B11C1BD536004212F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7CE211B41C1BD536004212F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CE211B61C1BD536004212F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CE211BB1C1BD536004212F1 /* sina_htf_ocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sina_htf_ocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE211BF1C1BD536004212F1 /* sina_htf_ocTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sina_htf_ocTests.m; sourceTree = "<group>"; };
@@ -51,6 +49,16 @@
 		7CE211C61C1BD536004212F1 /* sina_htf_ocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sina_htf_ocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE211CA1C1BD536004212F1 /* sina_htf_ocUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sina_htf_ocUITests.m; sourceTree = "<group>"; };
 		7CE211CC1C1BD536004212F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE212021C1BF638004212F1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7CE212031C1BF638004212F1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7CE212051C1BF648004212F1 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		7CE212061C1BF648004212F1 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		7CE212081C1BF657004212F1 /* MessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewController.h; sourceTree = "<group>"; };
+		7CE212091C1BF657004212F1 /* MessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
+		7CE2120B1C1BF662004212F1 /* DiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTableViewController.h; sourceTree = "<group>"; };
+		7CE2120C1C1BF662004212F1 /* DiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTableViewController.m; sourceTree = "<group>"; };
+		7CE2120E1C1BF66D004212F1 /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		7CE2120F1C1BF66D004212F1 /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +109,10 @@
 		7CE211A41C1BD536004212F1 /* sina_htf_oc */ = {
 			isa = PBXGroup;
 			children = (
+				7CE211EE1C1BF4DE004212F1 /* Classes */,
 				7CE211A81C1BD536004212F1 /* AppDelegate.h */,
 				7CE211A91C1BD536004212F1 /* AppDelegate.m */,
-				7CE211AB1C1BD536004212F1 /* ViewController.h */,
-				7CE211AC1C1BD536004212F1 /* ViewController.m */,
-				7CE211AE1C1BD536004212F1 /* Main.storyboard */,
 				7CE211B11C1BD536004212F1 /* Assets.xcassets */,
-				7CE211B31C1BD536004212F1 /* LaunchScreen.storyboard */,
 				7CE211B61C1BD536004212F1 /* Info.plist */,
 				7CE211A51C1BD536004212F1 /* Supporting Files */,
 			);
@@ -138,6 +143,95 @@
 				7CE211CC1C1BD536004212F1 /* Info.plist */,
 			);
 			path = sina_htf_ocUITests;
+			sourceTree = "<group>";
+		};
+		7CE211EE1C1BF4DE004212F1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7CE211EF1C1BF4DE004212F1 /* Model */,
+				7CE211F01C1BF4DE004212F1 /* Module */,
+				7CE211FB1C1BF4DE004212F1 /* Tools */,
+				7CE211FC1C1BF4DE004212F1 /* ViewModle */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7CE211EF1C1BF4DE004212F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CE211F01C1BF4DE004212F1 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				7CE211F51C1BF4DE004212F1 /* Main */,
+				7CE211F31C1BF4DE004212F1 /* Home */,
+				7CE211F71C1BF4DE004212F1 /* Message */,
+				7CE211F11C1BF4DE004212F1 /* Discover */,
+				7CE211F91C1BF4DE004212F1 /* Profile */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		7CE211F11C1BF4DE004212F1 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				7CE2120B1C1BF662004212F1 /* DiscoverTableViewController.h */,
+				7CE2120C1C1BF662004212F1 /* DiscoverTableViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		7CE211F31C1BF4DE004212F1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7CE212051C1BF648004212F1 /* HomeTableViewController.h */,
+				7CE212061C1BF648004212F1 /* HomeTableViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7CE211F51C1BF4DE004212F1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7CE212021C1BF638004212F1 /* MainViewController.h */,
+				7CE212031C1BF638004212F1 /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7CE211F71C1BF4DE004212F1 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				7CE212081C1BF657004212F1 /* MessageTableViewController.h */,
+				7CE212091C1BF657004212F1 /* MessageTableViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		7CE211F91C1BF4DE004212F1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7CE2120E1C1BF66D004212F1 /* ProfileTableViewController.h */,
+				7CE2120F1C1BF66D004212F1 /* ProfileTableViewController.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7CE211FB1C1BF4DE004212F1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		7CE211FC1C1BF4DE004212F1 /* ViewModle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CE211B51C1BD536004212F1 /* LaunchScreen.storyboard in Resources */,
 				7CE211B21C1BD536004212F1 /* Assets.xcassets in Resources */,
-				7CE211B01C1BD536004212F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CE211AD1C1BD536004212F1 /* ViewController.m in Sources */,
+				7CE2120D1C1BF662004212F1 /* DiscoverTableViewController.m in Sources */,
+				7CE212071C1BF648004212F1 /* HomeTableViewController.m in Sources */,
+				7CE2120A1C1BF657004212F1 /* MessageTableViewController.m in Sources */,
+				7CE212101C1BF66D004212F1 /* ProfileTableViewController.m in Sources */,
 				7CE211AA1C1BD536004212F1 /* AppDelegate.m in Sources */,
+				7CE212041C1BF638004212F1 /* MainViewController.m in Sources */,
 				7CE211A71C1BD536004212F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,25 +405,6 @@
 			targetProxy = 7CE211C71C1BD536004212F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7CE211AE1C1BD536004212F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CE211AF1C1BD536004212F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7CE211B31C1BD536004212F1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CE211B41C1BD536004212F1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7CE211CD1C1BD536004212F1 /* Debug */ = {
@@ -416,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = sina_htf_oc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.somethinginteresting.sina-htf-oc";
@@ -427,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = sina_htf_oc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.somethinginteresting.sina-htf-oc";
@@ -501,6 +580,7 @@
 				7CE211D11C1BD536004212F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CE211D21C1BD536004212F1 /* Build configuration list for PBXNativeTarget "sina_htf_ocTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +589,7 @@
 				7CE211D41C1BD536004212F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CE211D51C1BD536004212F1 /* Build configuration list for PBXNativeTarget "sina_htf_ocUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +598,7 @@
 				7CE211D71C1BD536004212F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
