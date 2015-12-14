@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C8EDE781C1D859300DF69B6 /* MainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8EDE771C1D859300DF69B6 /* MainTabBar.m */; };
 		7CE211A71C1BD536004212F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211A61C1BD536004212F1 /* main.m */; };
 		7CE211AA1C1BD536004212F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211A91C1BD536004212F1 /* AppDelegate.m */; };
 		7CE211B21C1BD536004212F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE211B11C1BD536004212F1 /* Assets.xcassets */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C8EDE761C1D859300DF69B6 /* MainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBar.h; sourceTree = "<group>"; };
+		7C8EDE771C1D859300DF69B6 /* MainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBar.m; sourceTree = "<group>"; };
+		7CDBF8951C1EBCF200579199 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7CE211A21C1BD536004212F1 /* sina_htf_oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sina_htf_oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE211A61C1BD536004212F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CE211A81C1BD536004212F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				7CE211EE1C1BF4DE004212F1 /* Classes */,
 				7CE211A81C1BD536004212F1 /* AppDelegate.h */,
 				7CE211A91C1BD536004212F1 /* AppDelegate.m */,
+				7CDBF8951C1EBCF200579199 /* PrefixHeader.pch */,
 				7CE211B11C1BD536004212F1 /* Assets.xcassets */,
 				7CE211B61C1BD536004212F1 /* Info.plist */,
 				7CE211A51C1BD536004212F1 /* Supporting Files */,
@@ -198,6 +203,8 @@
 			children = (
 				7CE212021C1BF638004212F1 /* MainViewController.h */,
 				7CE212031C1BF638004212F1 /* MainViewController.m */,
+				7C8EDE761C1D859300DF69B6 /* MainTabBar.h */,
+				7C8EDE771C1D859300DF69B6 /* MainTabBar.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -365,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8EDE781C1D859300DF69B6 /* MainTabBar.m in Sources */,
 				7CE2120D1C1BF662004212F1 /* DiscoverTableViewController.m in Sources */,
 				7CE212071C1BF648004212F1 /* HomeTableViewController.m in Sources */,
 				7CE2120A1C1BF657004212F1 /* MessageTableViewController.m in Sources */,
@@ -494,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = sina_htf_oc/PrefixHeader.pch;
 				INFOPLIST_FILE = sina_htf_oc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.somethinginteresting.sina-htf-oc";
@@ -506,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = sina_htf_oc/PrefixHeader.pch;
 				INFOPLIST_FILE = sina_htf_oc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.somethinginteresting.sina-htf-oc";
