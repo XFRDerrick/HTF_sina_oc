@@ -41,7 +41,7 @@
     
     CGFloat index = 0;
     NSInteger count = self.subviews.count;
-    
+    NSLog(@"%zd",count);
     for (int i = 0; i < count; i++) {
         UIView *childView = self.subviews[i];
         if ([childView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
@@ -59,6 +59,7 @@
 - (void)addPlushBtn{
 
     UIButton *plusBtn = [[UIButton alloc] init];
+    //设置backImage  and  Image
     [plusBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button"] forState:UIControlStateNormal];
     [plusBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button_highlighted"] forState:UIControlStateHighlighted];
     [plusBtn setImage:[UIImage imageNamed:@"tabbar_compose_icon_add"] forState:UIControlStateNormal];
@@ -67,8 +68,4 @@
     self.plusBtn = plusBtn;
     [self addSubview:plusBtn];
 }
-
-
-
-
 @end
