@@ -9,12 +9,12 @@
 #import "MainTabBar.h"
 
 @interface MainTabBar ()
-
 @property (weak ,nonatomic) UIButton *plusBtn;
-
 @end
 
 @implementation MainTabBar
+
+@dynamic delegate;
 
 #pragma mark 添加add 按钮
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -41,9 +41,11 @@
     
     CGFloat index = 0;
     NSInteger count = self.subviews.count;
-    NSLog(@"%zd",count);
+    NSLog(@"count = %zd",count);
     for (int i = 0; i < count; i++) {
         UIView *childView = self.subviews[i];
+//        NSLog(@"%@",NSStringFromClass([childView class]));
+        
         if ([childView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             childView.frame = CGRectOffset(rect, index * w , 0);
           
@@ -64,8 +66,20 @@
     [plusBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_compose_button_highlighted"] forState:UIControlStateHighlighted];
     [plusBtn setImage:[UIImage imageNamed:@"tabbar_compose_icon_add"] forState:UIControlStateNormal];
     [plusBtn setImage:[UIImage imageNamed:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateHighlighted];
+#pragma mark 为按钮添加单击事件
+    [plusBtn addTarget:self action:@selector(plusBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [plusBtn sizeToFit];
     self.plusBtn = plusBtn;
     [self addSubview:plusBtn];
 }
+
+-(void)plusBtnClick:(UIButton *)btn{
+    
+    if ([self.delegate respondsToSelector:@selector(tabBar:didSelectPlusButton:)]) {
+        [self.delegate tabBar: self didSelectPlusButton:btn];
+    }
+
+}
+
+
 @end

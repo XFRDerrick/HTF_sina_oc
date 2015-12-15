@@ -6,8 +6,10 @@
 //  Copyright © 2015年 hetefe. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseTableViewController.h"
 
-@interface HomeTableViewController : UITableViewController
+@interface HomeTableViewController : BaseTableViewController
+
+
 
 @end
