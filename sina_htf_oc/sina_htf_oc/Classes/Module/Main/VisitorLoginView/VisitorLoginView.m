@@ -69,7 +69,7 @@
     basicAnim.repeatCount = MAXFLOAT;
     basicAnim.duration = 10.0;
     basicAnim.toValue = @(2 * M_PI);
-//    basicAnim.byValue =
+
     //当动画界面 时区活动状态是 动画不移除
     basicAnim.removedOnCompletion = NO;
     
@@ -91,8 +91,8 @@
         //将自动布局enable
         [subview setTranslatesAutoresizingMaskIntoConstraints:0];
     }
-    //为各个subView手动布局
     
+    //为各个subView手动布局
     //house
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.largeIcon attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.largeIcon attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:-60]];

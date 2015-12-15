@@ -54,7 +54,7 @@
 }
 - (void)UIView:(UIView *)view userWillRegisterBtn:(UIButton *)loginBtn{
     NSLog(@"用户点击了注册按钮");
-    
+
 }
 
 
