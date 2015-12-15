@@ -10,12 +10,8 @@
 #import "VisitorLoginView.h"
 
 @interface BaseTableViewController ()<VisitorLoginViewDelegate>
-
 #pragma mark 用户登录状态
 @property (nonatomic, assign) BOOL isLogin;
-
-#pragma mark 新建的访客视图
-@property (nonatomic, strong) VisitorLoginView *visitorLoginView;
 
 @end
 

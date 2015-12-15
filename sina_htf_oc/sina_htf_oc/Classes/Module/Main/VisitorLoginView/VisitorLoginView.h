@@ -22,4 +22,6 @@
 #pragma mark delegate
 @property (nonatomic, assign) id<VisitorLoginViewDelegate> delegate;
 
+- (void)setupInfo:(NSString *)tipText WithImageName:(NSString *)imageName;
+
 @end

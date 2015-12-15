@@ -33,6 +33,20 @@
 
 @implementation VisitorLoginView
 
+#pragma mark 设置视图UI
+- (void)setupInfo:(NSString *)tipText WithImageName:(NSString *)imageName{
+
+    self.tipLable.text = tipText;
+    if (imageName) {
+        self.circleView.image = [UIImage imageNamed:imageName];
+        _largeIcon.hidden = YES;
+        [self bringSubviewToFront:self.circleView];
+    }else{
+        //开始动画
+        [self startAnimation];
+    }
+
+}
 
 //手动布局
 
@@ -48,6 +62,20 @@
     return self;
 }
 
+//circle动画
+- (void)startAnimation{
+
+    CABasicAnimation *basicAnim = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    basicAnim.repeatCount = MAXFLOAT;
+    basicAnim.duration = 10.0;
+    basicAnim.toValue = @(2 * M_PI);
+//    basicAnim.byValue =
+    //当动画界面 时区活动状态是 动画不移除
+    basicAnim.removedOnCompletion = NO;
+    
+    [self.circleView.layer addAnimation:basicAnim forKey:nil];
+
+}
 
 
 //#warning initWithCoder:aDecoder 是否需要实现

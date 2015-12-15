@@ -9,6 +9,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class VisitorLoginView;
+
 @interface BaseTableViewController : UITableViewController
+
+#pragma mark 新建的访客视图
+@property (nonatomic, strong) VisitorLoginView *visitorLoginView;
 
 @end
