@@ -9,7 +9,7 @@
 #import "BaseTableViewController.h"
 #import "VisitorLoginView.h"
 
-@interface BaseTableViewController ()
+@interface BaseTableViewController ()<VisitorLoginViewDelegate>
 
 #pragma mark 用户登录状态
 @property (nonatomic, assign) BOOL isLogin;
@@ -24,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.visitorLoginView.delegate = self;
     
 }
 
@@ -44,24 +45,22 @@
     //替换tabViewController的View
     self.view = self.visitorLoginView;
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"登录" style:UIBarButtonItemStylePlain target:self action:@selector(userWillLogin)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(userWillRegister)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"登录" style:UIBarButtonItemStylePlain target:self action:@selector(UIView:userWillLoginBtn:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(UIView:userWillRegisterBtn:)];
     
     
 }
 
 #pragma mark 登录 注册 事件
-- (void)userWillLogin{
-
-    NSLog(@"用户点击了登录按钮");
-
-}
-
-- (void)userWillRegister{
+- (void)UIView:(UIView *)view userWillLoginBtn:(UIButton *)loginBtn{
     
-    NSLog(@"用户点击了注册按钮");
-
+    NSLog(@"用户点击了登录按钮");
 }
+- (void)UIView:(UIView *)view userWillRegisterBtn:(UIButton *)loginBtn{
+    NSLog(@"用户点击了注册按钮");
+    
+}
+
 
 
 

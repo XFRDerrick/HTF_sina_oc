@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol MainTabBarDelegate <NSObject>
+@protocol MainTabBarDelegate <NSObject,UITabBarDelegate>
 
 - (void)tabBar:(UITabBar *)tabBar didSelectPlusButton:(UIButton *)plusButton;
 
@@ -16,7 +16,6 @@
 
 @interface MainTabBar : UITabBar
 
-#pragma mark delegate
-@property (nonatomic, assign) id<MainTabBarDelegate> delegate;
+@property (nonatomic, weak) id <MainTabBarDelegate> delegate;
 
 @end
