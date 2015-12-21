@@ -49,8 +49,14 @@
 
 #pragma mark 登录 注册 事件
 - (void)UIView:(UIView *)view userWillLoginBtn:(UIButton *)loginBtn{
-    
     NSLog(@"用户点击了登录按钮");
+   
+    //跳转到授权页面
+    OAuthViewController *oauth = [[OAuthViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:oauth];
+    [self presentViewController:nav animated:YES completion:nil];
+    
+    
 }
 - (void)UIView:(UIView *)view userWillRegisterBtn:(UIButton *)loginBtn{
     NSLog(@"用户点击了注册按钮");

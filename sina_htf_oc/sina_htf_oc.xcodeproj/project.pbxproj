@@ -11,6 +11,7 @@
 		7C19F2741C1FB43900EBE767 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C19F2731C1FB43900EBE767 /* BaseTableViewController.m */; };
 		7C19F27B1C1FB69300EBE767 /* VisitorLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C19F27A1C1FB69300EBE767 /* VisitorLoginView.m */; };
 		7C8EDE781C1D859300DF69B6 /* MainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8EDE771C1D859300DF69B6 /* MainTabBar.m */; };
+		7C919F7C1C278DB9007E9BAF /* OAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C919F7B1C278DB9007E9BAF /* OAuthViewController.m */; };
 		7CE211A71C1BD536004212F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211A61C1BD536004212F1 /* main.m */; };
 		7CE211AA1C1BD536004212F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE211A91C1BD536004212F1 /* AppDelegate.m */; };
 		7CE211B21C1BD536004212F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE211B11C1BD536004212F1 /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 		7C19F27F1C1FBF1F00EBE767 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		7C8EDE761C1D859300DF69B6 /* MainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBar.h; sourceTree = "<group>"; };
 		7C8EDE771C1D859300DF69B6 /* MainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBar.m; sourceTree = "<group>"; };
+		7C919F7A1C278DB9007E9BAF /* OAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthViewController.h; sourceTree = "<group>"; };
+		7C919F7B1C278DB9007E9BAF /* OAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthViewController.m; sourceTree = "<group>"; };
 		7CDBF8951C1EBCF200579199 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7CE211A21C1BD536004212F1 /* sina_htf_oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sina_htf_oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE211A61C1BD536004212F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,6 +129,15 @@
 				7C19F27A1C1FB69300EBE767 /* VisitorLoginView.m */,
 			);
 			name = VisitorLoginView;
+			sourceTree = "<group>";
+		};
+		7C919F761C278D47007E9BAF /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				7C919F7A1C278DB9007E9BAF /* OAuthViewController.h */,
+				7C919F7B1C278DB9007E9BAF /* OAuthViewController.m */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		7CE211991C1BD536004212F1 = {
@@ -211,6 +223,7 @@
 		7CE211F01C1BF4DE004212F1 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				7C919F761C278D47007E9BAF /* OAuth */,
 				7CE211F51C1BF4DE004212F1 /* Main */,
 				7CE211F31C1BF4DE004212F1 /* Home */,
 				7CE211F71C1BF4DE004212F1 /* Message */,
@@ -472,6 +485,7 @@
 				7C19F2741C1FB43900EBE767 /* BaseTableViewController.m in Sources */,
 				7CE2120D1C1BF662004212F1 /* DiscoverTableViewController.m in Sources */,
 				7CE212071C1BF648004212F1 /* HomeTableViewController.m in Sources */,
+				7C919F7C1C278DB9007E9BAF /* OAuthViewController.m in Sources */,
 				7CE2120A1C1BF657004212F1 /* MessageTableViewController.m in Sources */,
 				7CE212101C1BF66D004212F1 /* ProfileTableViewController.m in Sources */,
 				7CE211AA1C1BD536004212F1 /* AppDelegate.m in Sources */,
